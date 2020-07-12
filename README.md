@@ -5,7 +5,7 @@
 
 1. Add the module to your `go.mod`. E.g.
 
-```
+```go
 module github.com/<myself>/<myHugoInstance>
 
 go 1.14
@@ -15,7 +15,7 @@ require github.com/chemiker/hugo-mod-chartist latest
 
 2. Add the module to the `config.toml` of your Hugo configuration:
 
-```
+```TOML
 [module]
   [[module.imports]]
     path="github.com/chemiker/hugo-mod-chartist"
