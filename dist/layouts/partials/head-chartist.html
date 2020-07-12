@@ -1,0 +1,4 @@
+{{- $HugoChartist := resources.Get "sass/chartist.scss" | resources.ExecuteAsTemplate "sass/chartist.scss" . | toCSS (dict "targetPath" "css/chartist.min.css" "outputStyle" "compressed") -}}
+
+<link rel="stylesheet" href="{{ $HugoChartist.RelPermalink }}" integrity="{{ $HugoChartist.Data.Integrity }}" media="screen" />
+<script src="/js/chartist.min.js"></script>

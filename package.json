@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "chartist": "latest",
+    "chartist-plugin-axistitle": "latest",
+    "gulp": "latest",
+    "gulp-concat": "latest",
+    "merge-stream": "latest"
+  }
+}
