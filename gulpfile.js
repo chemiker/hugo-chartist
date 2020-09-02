@@ -21,6 +21,18 @@ function renderStatics() {
         "dist/licenses/"
     );
 
+    moveAndRenameFile(
+        "node_modules/chartist/dist/chartist.min.js.map",
+        "chartist.min.js.map",
+        "dist/static/js/"
+    );
+
+    moveAndRenameFile(
+        "node_modules/chartist-plugin-axistitle/dist/chartist-plugin-axistitle.min.js.map",
+        "chartist-plugin-axistitle.min.js.map",
+        "dist/static/js/"
+    );
+
     var chartist = gulp.src([
         "node_modules/chartist/dist/chartist.min.js",
         "node_modules/chartist-plugin-axistitle/dist/chartist-plugin-axistitle.min.js"
